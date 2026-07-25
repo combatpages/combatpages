@@ -1,0 +1,122 @@
+/* Base Table Styles */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f8fafc;
+  color: #334155;
+  margin: 0;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: #0f172a;
+}
+
+.table-container {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  padding: 14px 18px;
+  vertical-align: middle;
+}
+
+thead tr {
+  background-color: #4f46e5;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.site-link {
+  color: #4f46e5;
+  font-weight: 500;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+/* =================================================== */
+/* Mobile Responsive Adjustments (Screens under 650px) */
+/* =================================================== */
+@media (max-width: 650px) {
+  body {
+    padding: 1rem 0.5rem;
+  }
+
+  .table-container {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  /* Unset default table display layout */
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  /* Hide table header visually */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  /* Convert each row into a standalone card */
+  tbody tr {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Lay out cells as flexible key-value rows */
+  td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f5f9;
+    text-align: right;
+  }
+
+  td:last-child {
+    border-bottom: none;
+  }
+
+  /* Automatically render the header label using data-label attribute */
+  td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #4f46e5;
+    font-size: 0.875rem;
+    text-align: left;
+    padding-right: 1rem;
+  }
+}

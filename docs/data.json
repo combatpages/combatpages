@@ -1,0 +1,56 @@
+[
+	{
+		"name": "SRG Thai Boxing Gym",
+		"location": "Alexandria, NSW, Australia",
+		"website":"https://thaiboxingsydney.com/",
+		"date_visited_first": "November 2021"
+	},
+	{
+		"name": "Blue Mountains Martial Arts Centre (BMMAC)",
+		"location": "Leura, NSW, Australia",
+		"website":"https://bmmac.com.au/",
+		"date_visited_first": "September 2023"
+	},
+	{
+		"name": "Redfern Grappling Club",
+		"location": "Redfern, NSW, Australia",
+		"website":"",
+		"date_visited_first": "November 2023"
+	},
+	{
+		"name": "Partizan Grappling",
+		"location": "Kingsford, NSW, Australia",
+		"website":"https://partizangrappling.com/",
+		"date_visited_first": "May 2024"
+	},
+	{
+		"name": "PTJ Muaythai Gym",
+		"location": "Gladesville, NSW, Australia",
+		"website":"https://ptjmuaythai.com.au/",
+		"date_visited_first": "March 2025"
+	},
+	{
+		"name": "SGC MMA",
+		"location": "Chatswood, NSW, Australia",
+		"website":"https://www.sgcmma.com/",
+		"date_visited_first": "May 2025"
+	},
+	{
+		"name": "Legacy BJJ - Chatswood",
+		"location": "Chatswood, NSW, Australia",
+		"website":"https://www.legacybjj.com.au/Chatswood/",
+		"date_visited_first": "May 2025"
+	},
+	{
+		"name": "Combat Cartel",
+		"location": "Lane Cove, NSW, Australia",
+		"website":"https://www.combatcartel.com.au/",
+		"date_visited_first": "October 2025"
+	},
+	{
+		"name": "Origin MMA",
+		"location": "Gladesville, NSW, Australia",
+		"website":"https://www.originmma.com.au/",
+		"date_visited_first": "March 2026"
+	}
+]
