@@ -7,21 +7,59 @@
   <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-  <h1>Combat Pages</h1>
-  <div class="table-container">
-    <table id="data-table">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Location</th>
-          <th>Website</th>
-          <th>Date First Visited</th>
-        </tr>
-      </thead>
-      <tbody id="table-body">
-      </tbody>
-    </table>
-  </div>
+  <nav>
+    <a href="#/">Home</a>
+    <a href="#/visits">My Visits</a>
+    <a href="#/about">My Story</a>
+    <!--
+    <a href="#/places">Places</a>
+    <a href="#/events">Events</a>
+    -->
+  </nav>
+  <main id="app">
+    <section id="view-home" class="page-view">
+      <h1>Combat Pages</h1>
+      <div id="intro-home">
+        <p>These Combat Pages are an exploration of combat sport gyms and organisations, especially - but not limited to - those in the greater area of Sydney, NSW, Australia.</p>
+        <p>I share not only my story and my gym visits, but also as much information as I can find on other gyms, fight promotions, events, and learning resources of all kinds.</p>
+        <p>I want you all to benefit from the work I've done scrolling, messaging, emailing, reading, watching, striking, clinching, and rolling. On that note, check out <a href="#/visits">My Visits</a> to get started on the journey!</p>
+      </div>
+    </section>
+    <section id="view-visits" class="page-view">
+      <h2>My Visits</h2>
+      <div class="table-container">
+        <table id="data-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Classes Taken</th>
+              <th>Notes</th>
+              <th>Date First Visited</th>
+              <th>Location</th>
+              <th>Website</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+          </tbody>
+        </table>
+      </div>
+  </section>
+  <section id="view-about" class="page-view">
+    <div id="body-home">
+      <h2>My Story</h2>
+        <p>Like many fans of combat sports, I learned about Muay Thai and Jiu Jitsu from watching the UFC.</p>
+        <p>After months of watching MMA in pubs around Sydney, I found myself wanting to try them for myself.</p>
+        <p>Coincidentally, one day I found myself walking around Alexandria and I found SRG Thai Boxing with Gracie Sydney HQ above. It seemed like a sign. But I was recovering from a muscle injury so I delayed joining and then COVID lockdowns happened.</p>
+        <p>Once things started to open up, I found new excuses not to go until on Halloween 2021 someone I was trying to impress encouraged me to take the leap. A few days later, I signed up for a trial at SRG Thai Boxing. It was one of the best decisions I've ever made.</p>
+        <p>I trained at SRG for years - morning and night. I sharpened my striking and my clinching, and came to love sparring night, my trainers, and my training partners. Pandin, Paul, Cale, Luis, Sarkis, and especially Joh and Caja taught me all the Muay Thai I know. SRG is full of killers, and it's a baptism by fire once you get to a certain level. I loved every moment of it. Alas, life takes us in other directions and I had to move on.</p>
+        <p>A chance encounter in the Woolworths carpark led me to meet the then owner of Blue Mountains Martial Arts Centre (Chris Traish) back in 2023. I have a frame which is good for Muay Thai, but I thought it wouldn't be good for jiu jitsu. He disagreed and said my long legs would be good for a jiu jitsu guard, and invited me to his gym to try MMA and BJJ. After learning the double leg and the rear naked choke, I was hooked for life.</p>
+        <p>I would go on to train Muay Thai and jiu jitsu at many other places. We are so fortunate in Sydney to have so many options for combat sport gyms, and I want to try them all! After years of training, I still have so much to learn, and I want to see what everyone has to offer. And I want to share those experiences and lessons learned with others, especially people just starting out in combat sports. It can be hard knowing where to start when you're a beginner. And for the more advanced people... hopefully I can broaden your horizons too.</p>
+      </div>
+  </section>
+  <section id="view-contact" class="page-view">
+    <!-- Existing Contact Content -->
+  </section>
+  </main>
   <script src="index.js"></script>
 </body>
 </html>

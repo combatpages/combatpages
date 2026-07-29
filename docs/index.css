@@ -10,14 +10,22 @@ body {
   align-items: center;
 }
 
-h1 {
+h1, h2 {
   margin-bottom: 1.5rem;
   color: #0f172a;
+  text-align: center;
+}
+
+
+
+section {
+
+  max-width: 900px;
 }
 
 .table-container {
   width: 100%;
-  max-width: 900px;
+  /*max-width: 900px;*/
   background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
@@ -120,3 +128,14 @@ tbody tr:hover {
     padding-right: 1rem;
   }
 }
+
+/* Hide all view containers by default */
+.page-view {
+  display: none;
+}
+
+/* Display only the active view */
+.page-view.active {
+  display: block; /* or flex/grid depending on layout needs */
+}
+

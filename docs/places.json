@@ -1,0 +1,104 @@
+{
+	"SYD-SRG-01": {
+		"name": "SRG Thai Boxing Gym",
+		"location": "Alexandria, NSW, Australia",
+		"website":"https://thaiboxingsydney.com/",
+		"classes": "Muay Thai, Boxing"
+	},
+	"SYD-BMMAC-01": {
+		"name": "Blue Mountains Martial Arts Centre (BMMAC)",
+		"location": "Leura, NSW, Australia",
+		"website":"https://bmmac.com.au/",
+		"classes": "MMA, Kickboxing, Sambo, Jiu Jitsu, Arnis, Kendo, Boxing"
+	},
+	"SYD-RGC-01": {
+		"name": "Redfern Grappling Club",
+		"location": "Redfern, NSW, Australia",
+		"website":"",
+		"classes": "Gi/No-Gi Jiu Jitsu"
+	},
+	"SYD-PARTIZAN-01": {
+		"name": "Partizan Grappling",
+		"location": "Kingsford, NSW, Australia",
+		"website":"https://partizangrappling.com/",
+		"classes": "No-Gi Jiu Jitsu"
+	},
+	"SYD-PTJ-01": {
+		"name": "PTJ Muaythai Gym",
+		"location": "Gladesville, NSW, Australia",
+		"website":"https://ptjmuaythai.com.au/",
+		"classes": "Muay Thai"
+	},
+	"SYD-SGC-01": {
+		"name": "SGC MMA",
+		"location": "Chatswood, NSW, Australia",
+		"website":"https://www.sgcmma.com/",
+		"classes": "Muay Thai, Strength & Conditioning, Boxing, Wrestling"
+	},
+	"SYD-LEGACYCHAT-01": {
+		"name": "Legacy BJJ - Chatswood",
+		"location": "Chatswood, NSW, Australia",
+		"website":"https://www.legacybjj.com.au/Chatswood/",
+		"classes": "Gi/No-Gi Jiu Jitsu, Wrestling, Muay Thai, Boxing, MMA"
+	},
+	"SYD-COMBATCARTEL-01": {
+		"name": "Combat Cartel",
+		"location": "Lane Cove, NSW, Australia",
+		"website":"https://www.combatcartel.com.au/",
+		"classes": "No-Gi Jiu Jitsu, Kickboxing, Boxing"
+	},
+	"SYD-GARGRAP-01": {
+		"name": "Garage Grappling",
+		"location": "Bondi Junction, NSW, Australia",
+		"website":"https://garagegrappling.com.au/",
+		"classes": "Gi/No-Gi Jiu Jitsu, Judo"
+	},
+	"SYD-ORIGIN-01": {
+		"name": "Origin MMA",
+		"location": "Gladesville, NSW, Australia",
+		"website":"https://www.originmma.com.au/",
+		"classes": "No-Gi Jiu Jitsu, Muay Thai, MMA"
+	},
+	"SYD-GARJJCBD-01": {
+		"name": "Garage Jiu Jitsu - Sydney CBD",
+		"location": "Sydney, NSW, Australia",
+		"website":"https://www.garagejiujitsucbd.com.au/",
+		"classes": "Gi/No-Gi Jiu Jitsu, Wrestling"
+	},
+    "SYD-ACADEMY411-01": {
+        "name": "Academy 411",
+        "location": "Rosebery, NSW, Australia",
+        "website": "https://academy411.au/",
+        "classes": "Gi/No-Git Jiu Jitsu, Wrestling"
+    },
+    "SYD-GRAPPLINGED-01": {
+        "name": "Grappling Education",
+        "location": "Rockdale, NSW, Australia",
+        "website": "https://grapplingeducation.com/",
+        "classes": "Gi/No-Git Jiu Jitsu, Wrestling"
+    },
+    "SYD-SAKSRI-01": {
+        "name": "SakSri Muay Thai",
+        "location": "Marrickville, NSW, Australia",
+        "website": "https://www.saksrimuaythai.com.au/",
+        "classes": "Muay Thai, Boxing"
+    },
+    "SYD-SHG-01": {
+        "name": "Singhaganta Muaythai Gym",
+        "location": "Haymarket, NSW, Australia",
+        "website": "https://www.singhagantamuaythai.com/",
+        "classes": "Muay Thai, Boxing"
+    },
+    "VAN-EVMT-01": {
+        "name": "East Van Muay Thai",
+        "location": "Vancouver, BC, Canada",
+        "website": "https://www.evmt.ca/",
+        "classes": "Muay Thai"
+    },
+    "MON-APEX-01": {
+        "name": "Apex Martial Arts",
+        "location": "Montreal, QC, Canada",
+        "website": "https://apexmartialarts.ca/",
+        "classes": "Muay Thai, Boxing, Jiu Jitsu, Wrestling, MMA"
+    }
+}

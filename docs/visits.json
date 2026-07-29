@@ -1,0 +1,111 @@
+[
+	{
+		"code": "SYD-SRG-01",
+		"date_visited_first": "November 2021",
+		"classes_taken": "Muay Thai, Boxing",
+		"notes": "Authentic traditional Muay Thai. All trainers are fighters or former fighters and there are gym members of all levels. They work you hard in classes, so be prepared to sweat! Great place to learn Muay Thai striking and clinching."
+	},
+	{
+		"code": "SYD-BMMAC-01",
+		"date_visited_first": "September 2023",
+		"classes_taken": "No-Gi Jiu Jitsu, MMA, Kickboxing",
+		"notes": "A hidden gem in the Blue Mountains. Very experienced trainers and members. I especially love their jiu jitsu. Chris and Sam are legends. If you're in the mountians, you have to stop by!"
+	},
+	{
+		"code": "SYD-RGC-01",
+		"date_visited_first": "November 2023",
+		"classes_taken": "No-Gi Jiu Jitsu",
+		"notes": "Unfortunately, this club closed when the Redfern PCYC closed down. Small club with challenging rolls. Peter taught me some valuable lessons."
+	},
+	{
+		"code":"SYD-PARTIZAN-01",
+		"date_visited_first": "May 2024",
+		"classes_taken": "No-Gi Jiu Jitsu",
+		"notes": "Leaders in the no-gi jiu jitsu space in Sydney. They've got a great modern approach and I found it to be an especially good place for beginners."
+	},
+	{
+		"code": "VAN-EVMT-01",
+		"date_visited_first": "September 2024",
+		"classes_taken": "N/A",
+		"notes": "I had an injury when I visited EVMT, so I couldn't train, but I still stopped by anyway. I'd been following them on IG for a while, so it was great to see them in person. Victoria Bogdan was super friendly and knew Luis Cajaiba from Thailand, so we talked about how he's such a great guy. It's a small world!"
+	},
+	{
+		"code": "MON-APEX-01",
+		"date_visited_first": "September 2024",
+		"classes_taken": "N/A",
+		"notes": "I was still injured, so still no training, but it was an interesting space. I also learned that Muay Thai competition is illegal in Québec, but MMA is legal. Make that make sense."
+	},
+	{
+		"code": "SYD-PTJ-01",
+		"date_visited_first": "March 2025",
+		"classes_taken": "Muay Thai",
+		"notes": "Authentic traditional Muay Thai like SRG. Trainers are fighters and former fighters. Excellent timetable which caters to anyone and everyone."
+	},
+	{
+		"code": "SYD-SGC-01",
+		"date_visited_first": "May 2025",
+		"classes_taken": "Muay Thai, Strength & Conditioning",
+		"notes": "I love their innovative approach to training. I wish more gyms would have a Strength & Conditioning component in their offerings. Looking forward to seeing these guys grow."
+
+	},
+	{
+		"code": "SYD-LEGACYCHAT-01",
+		"date_visited_first": "May 2025",
+		"classes_taken": "Gi Jiu Jitsu, Muay Thai",
+		"notes": "It was my first and only time doing gi jiu jitsu. I'm still not sure the gi is for me. But Nattapong was great with the Muay Thai. They've also got some great young killers for members."
+	},
+	{
+		"code": "SYD-COMBATCARTEL-01",
+		"date_visited_first": "October 2025",
+		"classes_taken": "No-Gi Jiu Jitsu (Open Mat)",
+		"notes": "I was only there for an open mat, but I had a good time rolling and great chats afterwards. I really want to try their kickboxing sometime too!"
+	},
+	{
+		"code": "SYD-GARGRAP-01",
+		"date_visited_first": "December 2025",
+		"classes_taken": "No-Gi Jiu Jitsu (Open Mat)",
+		"notes": "Lots of experienced members who tapped me out a lot. I would love to come back for a class and to try out their judo!"
+	},
+	{
+		"code": "SYD-ORIGIN-01",
+		"date_visited_first": "March 2026",
+		"classes_taken": "No-Gi Jiu Jitsu, Muay Thai",
+		"notes": "Recommended by a pro fighter friend and I can see why. Incredible attention to detail from all the trainers. Suitable for all levels. You wish you had time to take every class!"
+	},
+	{
+		"code": "SYD-GARJJCBD-01",
+		"date_visited_first": "March 2026",
+		"classes_taken": "No-Gi Jiu Jitsu",
+		"notes": "Its central location makes it easy to start the day with jiu jitsu. Friendly people, quality instruction, awesome showers. Looking forward to more visits."
+	},
+	{
+		"code": "SYD-GRAPPLINGED-01",
+		"date_visited_first": "",
+		"classes_taken": "",
+		"notes": "I've been meaning to go to Grappling Education for years. "
+	},
+	{
+		"code": "SYD-ACADEMY411-01",
+		"date_visited_first": "",
+		"classes_taken": "",
+		"notes": "A gym full of killers. I'm keen to learn from them."
+	},
+	{
+		"code": "SYD-SAKSRI-01",
+		"date_visited_first": "",
+		"classes_taken": "",
+		"notes": "I've known all the trainers a long time, so looking forward to checking out their new spot!"
+	},
+	{
+		"code": "SYD-SHG-01",
+		"date_visited_first": "",
+		"classes_taken": "",
+		"notes": "Great crew of trainers and a great central location. I really need to stop by for a session."
+	},
+	{
+		"code": "",
+		"date_visited_first": "",
+		"classes_taken": "",
+		"notes": ""
+	}
+]
