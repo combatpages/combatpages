@@ -93,12 +93,14 @@
         "name": "East Van Muay Thai",
         "location": "Vancouver, BC, Canada",
         "website": "https://www.evmt.ca/",
-        "classes": "Muay Thai"
+        "classes": "Muay Thai",
+		"donotlist": 1
     },
     "MON-APEX-01": {
         "name": "Apex Martial Arts",
-        "location": "Montreal, QC, Canada",
+        "location": "Montréal, QC, Canada",
         "website": "https://apexmartialarts.ca/",
-        "classes": "Muay Thai, Boxing, Jiu Jitsu, Wrestling, MMA"
+        "classes": "Muay Thai, Boxing, Jiu Jitsu, Wrestling, MMA",
+		"donotlist": 1
     }
 }

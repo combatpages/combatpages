@@ -1,10 +1,13 @@
 // Define route mappings: 'hash-path': 'section-id'
 const routes = {
   '/': 'view-home',
+  '/visits': 'view-visits',
+  '/gyms': 'view-gyms',
+  '/orgs': 'view-orgs',
+  '/learn': 'view-learn',
   '/about': 'view-about',
-  '/events': 'view-events',
-  '/places': 'view-places',
-  '/visits': 'view-visits'
+  '/fighters': 'view-fighters',
+  '/misc': 'view-misc'
 };
 
 function router() {
@@ -33,12 +36,14 @@ window.addEventListener('DOMContentLoaded', router);
 
 async function loadData() {
   try {
-    // 1. Fetch places.json first
-    const placesResponse = await fetch('places.json');
-    if (!placesResponse.ok) {
-      throw new Error(`Failed to load places.json: ${placesResponse.status}`);
+    // 1. Fetch gyms.json first
+    const gymsResponse = await fetch('gyms.json');
+    if (!gymsResponse.ok) {
+      throw new Error(`Failed to load gyms.json: ${gymsResponse.status}`);
     }
-    const placesData = await placesResponse.json();
+    const gymsData = await gymsResponse.json();
+
+    renderGyms(gymsData)
 
     // 2. Fetch visits.json second
     const visitsResponse = await fetch('visits.json');
@@ -48,7 +53,7 @@ async function loadData() {
     const visitsData = await visitsResponse.json();
 
     // Process and render your data here using placesData and visitsData
-    renderVisits(visitsData, placesData);
+    renderVisits(visitsData, gymsData);
 
   } catch (error) {
     console.error('Error loading data:', error);
@@ -74,17 +79,42 @@ function renderVisits(visits,places) {
     if (item){
       // Format website link or fall back to N/A
       const websiteHtml = item.website && item.website !== "N/A"
-        ? `<a href="${item.website}" target="_blank" rel="noopener noreferrer" class="site-link">${item.website}</a>`
-        : `<span>N/A</span>`;
+        ? `<a href="${item.website}" target="_blank" rel="noopener noreferrer" class="site-link">${item.name}</a>`
+        : `<span>${item.name}</span>`;
 
       // data-label values line up directly with desktop headers for mobile CSS rendering
       row.innerHTML = `
-        <td data-label="Name"><strong>${item.name}</strong></td>
+        <td data-label="Name"><strong>${websiteHtml}</strong></a></td>
         <td data-label="Classes Taken">${visit.classes_taken}</td>
-        <td data-label="Notes">${visit.notes}</td>
         <td data-label="Date First Visited">${visit.date_visited_first}</td>
         <td data-label="Location">${item.location}</td>
-        <td data-label="Website">${websiteHtml}</td>
+      `;
+
+      tableBody.appendChild(row);
+    }
+  });
+}
+
+function renderGyms(gymsData) {
+  const tableBody = document.getElementById("table-gyms");
+  tableBody.innerHTML = "";
+  const gym_codes = Object.keys(gymsData).sort((a, b) => 
+    gymsData[a].name.localeCompare(gymsData[b].name, undefined, { sensitivity: 'base' })
+  );
+  gym_codes.forEach((gym_code) => {
+    const row = document.createElement("tr");
+    const item = gymsData[gym_code];
+    if (item){
+      // Format website link or fall back to N/A
+      const websiteHtml = item.website && item.website !== "N/A"
+        ? `<a href="${item.website}" target="_blank" rel="noopener noreferrer" class="site-link">${item.name}</a>`
+        : `<span>${item.name}</span>`;
+
+      // data-label values line up directly with desktop headers for mobile CSS rendering
+      row.innerHTML = `
+        <td data-label="Name"><strong>${websiteHtml}</strong></a></td>
+        <td data-label="Classes Taken">${item.classes}</td>
+        <td data-label="Location">${item.location}</td>
       `;
 
       tableBody.appendChild(row);

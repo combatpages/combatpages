@@ -1,0 +1,267 @@
+/* ==========================================================================
+   Combat Pages - Dark Mode Stylesheet (index.css)
+   ========================================================================== */
+
+/* 1. Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@600;700&display=swap');
+
+/* 2. Global CSS Variables (Theme Configuration) */
+:root {
+  --bg-main: #0b0f19;          /* Deep slate dark background */
+  --bg-card: #161e2e;          /* Elevated card background */
+  --border-subtle: #2a3447;     /* Soft border for container */
+  
+  --text-heading: #f8fafc;     /* Crisp white for headers */
+  --text-body: #cbd5e1;        /* Readable light gray text */
+  --text-muted: #94a3b8;       /* Subtle text for inactive nav */
+  
+  /* Link & Accent Colors */
+  --accent-red: #ef4444;       /* Main crimson accent */
+  --accent-hover: #f87171;     /* Lighter red for active/hover */
+  --link-color: #38bdf8;       /* Sky blue for body hyperlinks */
+  --link-hover: #7dd3fc;       /* Soft blue on hover */
+  
+  --font-heading: 'Oswald', sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  --max-width: 768px;
+}
+
+/* 3. Base Resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-main);
+  color: var(--text-body);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem 3rem 1rem;
+}
+
+/* 4. Top Navigation Bar */
+nav {
+  width: 100%;
+  max-width: var(--max-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+/* Custom Navigation Link Styling */
+nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--accent-hover);
+}
+
+/* Active navigation state for JS toggle */
+nav a.active,
+nav a[aria-current="page"] {
+  color: var(--accent-red);
+  border-bottom-color: var(--accent-red);
+}
+
+/* 5. Main Outer Wrapper */
+main, .container {
+  width: 100%;
+  max-width: var(--max-width);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 2rem 1.75rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+  
+  /* Fits content cleanly */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* 6. Section Display Rules for index.js Toggle */
+.page-view {
+  display: none; /* Hides all sections by default */
+}
+
+/* Add class="active" in JS to show the current section */
+.page-view.active {
+  display: block; 
+}
+
+/* 7. Typography & Headings */
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--text-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.75rem;
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  color: var(--text-body);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* 8. Body Hyperlink Colors */
+p a, 
+section a {
+  color: var(--link-color);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--link-color);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+p a:hover, 
+section a:hover {
+  color: var(--link-hover);
+  border-bottom-style: solid;
+}
+
+/* ==========================================
+   VISITS TABLE STYLING
+   ========================================== */
+
+/* 1. Main Table Container & Border */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* 2. Table Header Formatting */
+th {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-weight: 700;
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 3. Table Data Cells Formatting */
+td {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e0e0e0;
+  vertical-align: top;
+  word-break: break-word; /* Prevents text overflow */
+}
+
+/* 4. Remove right border on the last column */
+td:last-child, 
+th:last-child {
+  border-right: none;
+}
+
+/* 5. Remove bottom border on the last row */
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* 6. Subtle Zebra Striping for Rows */
+tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+/* 7. Row Hover Effect */
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+@media screen and (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tbody tr {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0;
+    border: none;
+    font-size: 0.95rem;
+  }
+
+  /* Render label on the left using the data-label attribute */
+  td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #888;
+    margin-right: 1rem;
+    min-width: 120px;
+    text-align: left;
+  }
+
+  /* Make Gym Name header style */
+  td:first-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  td:first-child::before {
+    display: none; /* Hide label for the title line */
+  }
+}
