@@ -265,3 +265,70 @@ tbody tr:hover {
     display: none; /* Hide label for the title line */
   }
 }
+
+/* --- Desktop Default Styles --- */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-toggle {
+  display: none; /* Hide button on large screens */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger, .hamburger::before, .hamburger::after {
+  content: '';
+  display: block;
+  background: #fff; /* Match your text/accent color */
+  height: 3px;
+  width: 2rem;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before { transform: translateY(-8px); }
+.hamburger::after { transform: translateY(5px); }
+
+/* --- Mobile View Styles --- */
+@media (max-width: 600px) {
+  .nav-toggle {
+    display: block; /* Show menu icon on small screens */
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: #121824; /* Match dark theme background */
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+    
+    /* Hidden by default on mobile */
+    display: none; 
+  }
+
+  /* Active class appended by JavaScript */
+  .nav-links.nav-open {
+    display: flex;
+  }
+ nav {
+  display: flex;
+  justify-content: flex-end; /* Pushes children (hamburger) to the right */
+  align-items: center;
+  padding: 1rem;
+  position: relative;        /* Keeps the dropdown anchored relative to nav */
+}
+
+.nav-toggle {
+  margin-left: auto;         /* Fallback to ensure it stays on the far right */
+}
+}
