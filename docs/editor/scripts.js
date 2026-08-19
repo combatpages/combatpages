@@ -6,36 +6,17 @@ const routes = {
 };
 
 const errorBar = document.getElementById('error-bar');
-
 const section_view_gyms = document.querySelector("section#view-gyms");
 const section_view_visits = document.querySelector("section#view-visits");
 [section_view_gyms,section_view_visits].forEach(each_section => {
   if (each_section) {
     const jsonInput = each_section.querySelector('.json-input');
-    const fetch_btn = each_section.querySelector("button.fetch_btn");
-    if (fetch_btn) {
-      fetch_btn.addEventListener("click", fetch_json);
-    }
-    const format_btn = each_section.querySelector("button.format_btn");
-    if (format_btn) {
-      format_btn.addEventListener("click", format_json);
-    }
-    const copy_btn = each_section.querySelector("button.copy_btn");
-    if (copy_btn) {
-      copy_btn.addEventListener("click", copy_json);
-    }
-    const save_btn = each_section.querySelector("button.save_btn");
-    if (save_btn) {
-      save_btn.addEventListener("click", save_json);
-    }
-    const load_btn = each_section.querySelector("button.load_btn");
-    if (load_btn) {
-      load_btn.addEventListener("click", load_json);
-    }
-    const json_input = each_section.querySelector("textarea.json-input");
-    if (json_input){
-      json_input.addEventListener("input",handleInput);
-    }
+    each_section.querySelector("button.fetch_btn")?.addEventListener("click", fetch_json);
+    each_section.querySelector("button.format_btn")?.addEventListener("click", format_json);
+    each_section.querySelector("button.copy_btn")?.addEventListener("click", copy_json);
+    each_section.querySelector("button.save_btn")?.addEventListener("click", save_json);
+    each_section.querySelector("button.load_btn")?.addEventListener("click", load_json); 
+    each_section.querySelector("textarea.json-input")?.addEventListener("input",handleInput);
   }
 })
 
@@ -110,10 +91,14 @@ function save_json(e) {
     const closest_section = e.target.closest("section");
     const json_editor = closest_section.querySelector(".json-input");
     const parsed = JSON.parse(json_editor.value);
-    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(parsed, null, 2));
+    const content = JSON.stringify(parsed, null, 2);
+    const blob = new Blob([content], { type: "application/json;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+
     const downloadAnchor = document.createElement('a');
-    downloadAnchor.setAttribute("href", dataStr);
+    downloadAnchor.setAttribute("href", url);
     downloadAnchor.setAttribute("download", filename);
+
     document.body.appendChild(downloadAnchor);
     downloadAnchor.click();
     downloadAnchor.remove();
@@ -180,6 +165,13 @@ if (installBtn) {
     // Show the install button in your UI
     installBtn.style.display = 'inline-block';
   });
+
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
+  if (isIOS && !isStandalone) {
+    installBtn.style.display = 'inline-block';
+  }
+
 
   // Handle the install button click
   installBtn.addEventListener('click', async () => {
