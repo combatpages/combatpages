@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combat Pages Editor</title>
+  <link rel="stylesheet" href="../index2.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="../favicon.ico" />
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <nav>
+    <span class="nav-brand"><a href="#/">Combat Pages Editor</a></span>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#/visits">Visits</a></li>
+      <li><a href="#/gyms">Gyms</a></li>
+    </ul>
+  </nav>
+  <main id="app">
+    <section id="view-home" class="page-view">
+      <h1>Editor</h1>
+      <div id="intro-home">
+        <p>Here you will find an editor that lets you work with Combat Pages data!</p>
+        <p><button id="install-btn">Install App</button></p>
+      </div>
+    </section>
+    <section id="view-gyms" class="page-view">
+      <div id="error-bar" class="error-bar"></div>
+      <h3>Add New Gym</h3>
+      <div class="panel">
+        <!-- Form to Add / Edit Gym Entry -->
+        <div class="gym-form-container">
+          
+          <form id="gymForm">
+            <div class="form-row">
+              <label for="gymCode">Code</label>
+              <input type="text" id="gymCode" required />
+            </div>
+            <div class="form-row">
+              <label for="gymName">Name</label>
+              <input type="text" id="gymName" required />
+            </div>
+            <div class="form-row">
+              <label for="gymLocation">Location</label>
+              <input type="text" id="gymLocation" />
+            </div>
+            <div class="form-row">
+              <label for="gymWebsite">Website</label>
+              <input type="url" id="gymWebsite" />
+            </div>
+            <div class="form-row">
+              <label for="gymClasses">Classes</label>
+              <input type="text" id="gymClasses" />
+            </div>
+            <div class="form-row button-row">
+              <button type="button" id="addGymBtn">Add</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-header">Raw JSON Editor</div>
+        <div class="editor-actions button-group">
+          <button type="button" class="fetch_btn" data-file="../gyms.json">Fetch JSON</button>
+          <button type="button" class="format_btn">Format</button>
+          <button type="button" class="copy_btn">Copy to Clipboard</button>
+          <button type="button" class="save_btn" data-file="gyms.json">Save</button>
+          <button type="button" class="load_btn">Load</button>
+        </div>
+        <textarea class="json-input" placeholder="Paste or type JSON here..."></textarea>
+      </div>
+    </section>
+    <section id="view-visits" class="page-view">
+      <div id="error-bar" class="error-bar"></div>
+      <h3>Add New Visit</h3>
+      <div class="panel">
+        <!-- Finish work on user-friendly entry form -->
+        <!--
+        <div class="gym-form-container">
+          
+          <form id="gymForm">
+            <div class="form-row">
+              <label for="gymCode">Code</label>
+              <input type="text" id="gymCode" required />
+            </div>
+            <div class="form-row">
+              <label for="gymName">Name</label>
+              <input type="text" id="gymName" required />
+            </div>
+            <div class="form-row">
+              <label for="gymLocation">Date First Visited</label>
+              <input type="text" id="gymLocation" />
+            </div>
+            <div class="form-row">
+              <label for="gymWebsite">Classes Taken</label>
+              <input type="url" id="gymWebsite" />
+            </div>
+            <div class="form-row">
+              <label for="gymClasses">Notes</label>
+              <input type="text" id="gymClasses" />
+            </div>
+            <div class="form-row button-row">
+              <button type="button" id="addGymBtn">Add</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      -->
+      <div class="panel">
+        <div class="panel-header">Raw JSON Editor</div>
+        <div class="editor-actions button-group">
+          <button type="button" class="fetch_btn" data-file="../visits.json">Fetch JSON</button>
+          <button type="button" class="format_btn">Format</button>
+          <button type="button" class="copy_btn">Copy to Clipboard</button>
+          <button type="button" class="save_btn" data-file="visits.json">Save</button>
+          <button type="button" class="load_btn">Load</button>
+        </div>
+        <textarea class="json-input" placeholder="Paste or type JSON here..."></textarea>
+      </div>
+    </section>
+  </main>
+  <script src="../shared.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
