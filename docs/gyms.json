@@ -1,4 +1,52 @@
 {
+  "SYD-ZEUS-01": {
+    "name": "Zeus Martial Arts Academy",
+    "location": "Marrickville, NSW, Australia",
+    "website": "https://zeusacademy.com.au/",
+    "classes": "Gi/No-Gi Jiu Jitsu, Muay Thai, Kickboxing, MMA, Pankration, TKD, Hapkido"
+  },
+  "SYD-MMA-01": {
+    "name": "Apex MMA",
+    "location": "Brookvale, NSW, Australia",
+    "website": "https://www.apexmma.com.au/",
+    "classes": "MMA, Muay Thai, No-Gi BJJ"
+  },
+  "SYD-MSP-01": {
+    "name": "MSP Muay Thai Gym",
+    "location": "Jamisontown, NSW, Australia",
+    "website": "https://www.mspmuaythaigym.com.au/",
+    "classes": "Muay Thai"
+  },
+  "SYD-MACHETE-01": {
+    "name": "Machete Muay Thai",
+    "location": "Penrith, NSW, Australia",
+    "website": "https://machetemuaythai.com.au/",
+    "classes": "Muay Thai"
+  },
+  "SYD-BMJJA-01": {
+    "name": "Blue Mountains Jiu Jitsu Academy",
+    "location": "Springwood, NSW, Australia",
+    "website": "https://bmjja.com.au/",
+    "classes": "Gi/No-Gi Jiu Jitsu, MMA"
+  },
+  "SYD-UTSJUDO-01": {
+    "name": "UTS Judo Club",
+    "location": "Ultimo, NSW, Australia",
+    "website": "https://utsjudoclub.com.au/",
+    "classes": "Judo"
+  },
+  "SYD-OPENSPAR-01": {
+    "name": "Open Sparring",
+    "location": "Sydney, NSW, Australia",
+    "website": "https://opensparring.com/",
+    "classes": "Muay Thai, Boxing, Gi/No-Gi Jiu Jitsu, Wrestling"
+  },
+  "SYD-8LIMBSBON-01": {
+    "name": "8 Limbs",
+    "location": "Bondi Junction, NSW, Australia",
+    "website": "https://eightlimbs.com.au/",
+    "classes": "Muay Thai, Boxing"
+  },
   "SYD-KUMITE-01": {
     "name": "Kumite Jiu Jitsu",
     "location": "Concord, NSW, Australia",
