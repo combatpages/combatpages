@@ -51,7 +51,7 @@ function renderVisits(visits,places) {
   const tableBody = document.getElementById("table-body");
   tableBody.innerHTML = "";
 
-  visits.forEach((visit) => {
+  visits.reverse().forEach((visit) => {
     const row = document.createElement("tr");
 
     const code = visit.code;

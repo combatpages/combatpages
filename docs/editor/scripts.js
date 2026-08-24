@@ -202,6 +202,7 @@ document.getElementById('addGymBtn').addEventListener('click', () => {
   const nameInput = document.getElementById('gymName');
   const locationInput = document.getElementById('gymLocation');
   const websiteInput = document.getElementById('gymWebsite');
+  const instaInput = document.getElementById('gymIG');
   const classesInput = document.getElementById('gymClasses');
 
   const code = codeInput.value.trim();
@@ -229,6 +230,7 @@ document.getElementById('addGymBtn').addEventListener('click', () => {
       name: name,
       location: locationInput.value.trim(),
       website: websiteInput.value.trim(),
+      instagram: instaInput.value.trim(),
       classes: classesInput.value.trim()
     }
   };
