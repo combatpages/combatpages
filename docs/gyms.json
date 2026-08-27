@@ -3,164 +3,189 @@
     "name": "Zeus Martial Arts Academy",
     "location": "Marrickville, NSW, Australia",
     "website": "https://zeusacademy.com.au/",
+    "instagram": "https://www.instagram.com/_zeusacademy/",
     "classes": "Gi/No-Gi Jiu Jitsu, Muay Thai, Kickboxing, MMA, Pankration, TKD, Hapkido"
   },
-  "SYD-MMA-01": {
+  "SYD-APEXMMA-01": {
     "name": "Apex MMA",
     "location": "Brookvale, NSW, Australia",
     "website": "https://www.apexmma.com.au/",
+    "instagram": "https://www.instagram.com/apexmmabrookvale",
     "classes": "MMA, Muay Thai, No-Gi BJJ"
   },
   "SYD-MSP-01": {
     "name": "MSP Muay Thai Gym",
     "location": "Jamisontown, NSW, Australia",
     "website": "https://www.mspmuaythaigym.com.au/",
+    "instagram": "https://www.instagram.com/msp_muaythaigym/",
     "classes": "Muay Thai"
   },
   "SYD-MACHETE-01": {
     "name": "Machete Muay Thai",
     "location": "Penrith, NSW, Australia",
     "website": "https://machetemuaythai.com.au/",
+    "instagram": "https://www.instagram.com/machetemuaythai/",
     "classes": "Muay Thai"
   },
   "SYD-BMJJA-01": {
     "name": "Blue Mountains Jiu Jitsu Academy",
     "location": "Springwood, NSW, Australia",
     "website": "https://bmjja.com.au/",
+    "instagram": "https://www.instagram.com/bmjjacademy/",
     "classes": "Gi/No-Gi Jiu Jitsu, MMA"
   },
   "SYD-UTSJUDO-01": {
     "name": "UTS Judo Club",
     "location": "Ultimo, NSW, Australia",
     "website": "https://utsjudoclub.com.au/",
+    "instagram": "https://www.instagram.com/utsjudo/",
     "classes": "Judo"
   },
   "SYD-OPENSPAR-01": {
     "name": "Open Sparring",
     "location": "Sydney, NSW, Australia",
     "website": "https://opensparring.com/",
+    "instagram": "https://www.instagram.com/opensparring",
     "classes": "Muay Thai, Boxing, Gi/No-Gi Jiu Jitsu, Wrestling"
   },
   "SYD-8LIMBSBON-01": {
     "name": "8 Limbs",
     "location": "Bondi Junction, NSW, Australia",
     "website": "https://eightlimbs.com.au/",
+    "instagram": "https://www.instagram.com/8limbsbondi",
     "classes": "Muay Thai, Boxing"
   },
   "SYD-KUMITE-01": {
     "name": "Kumite Jiu Jitsu",
     "location": "Concord, NSW, Australia",
     "website": "https://www.kumitejiujitsu.com.au/",
+    "instagram": "https://www.instagram.com/kumitejiujitsu/",
     "classes": "Gi/No-Gi Jiu Jitsu"
   },
   "SYD-INVICTUS-01": {
     "name": "Invictus Health Club",
     "location": "Chatswood, NSW, Australia",
     "website": "https://invictushealthclub.com.au/",
+    "instagram": "https://www.instagram.com/invictus.healthclub/",
     "classes": "Boxing, Muay Thai, Wrestling, Gi/No-Gi Jiu Jitsu"
   },
   "SYD-SRG-01": {
     "name": "SRG Thai Boxing Gym",
     "location": "Alexandria, NSW, Australia",
     "website": "https://thaiboxingsydney.com/",
+    "instagram": "https://www.instagram.com/srgthaiboxing",
     "classes": "Muay Thai, Boxing"
   },
   "SYD-BMMAC-01": {
     "name": "Blue Mountains Martial Arts Centre (BMMAC)",
     "location": "Leura, NSW, Australia",
     "website": "https://bmmac.com.au/",
+    "instagram": "https://www.instagram.com/bmmac_mma/",
     "classes": "MMA, Kickboxing, Sambo, Jiu Jitsu, Arnis, Kendo, Boxing"
   },
   "SYD-RGC-01": {
     "name": "Redfern Grappling Club",
     "location": "Redfern, NSW, Australia",
-    "website": "",
+    "website": "https://www.hillsgrappling.club/",
+    "instagram": "https://www.instagram.com/redferngrapplingclub/",
     "classes": "Gi/No-Gi Jiu Jitsu"
   },
   "SYD-PARTIZAN-01": {
     "name": "Partizan Grappling",
     "location": "Kingsford, NSW, Australia",
     "website": "https://partizangrappling.com/",
+    "instagram": "https://www.instagram.com/partizangrappling",
     "classes": "No-Gi Jiu Jitsu"
   },
   "SYD-PTJ-01": {
     "name": "PTJ Muaythai Gym",
     "location": "Gladesville, NSW, Australia",
     "website": "https://ptjmuaythai.com.au/",
+    "instagram": "https://www.instagram.com/ptjmuaythaigym",
     "classes": "Muay Thai"
   },
   "SYD-SGC-01": {
     "name": "SGC MMA",
     "location": "Chatswood, NSW, Australia",
     "website": "https://www.sgcmma.com/",
+    "instagram": "https://www.instagram.com/sgc_muaythai/",
     "classes": "Muay Thai, Strength & Conditioning, Boxing, Wrestling"
   },
   "SYD-LEGACYCHAT-01": {
     "name": "Legacy BJJ - Chatswood",
     "location": "Chatswood, NSW, Australia",
     "website": "https://www.legacybjj.com.au/Chatswood/",
+    "instagram": "https://www.instagram.com/legacybjj_chatswood",
     "classes": "Gi/No-Gi Jiu Jitsu, Wrestling, Muay Thai, Boxing, MMA"
   },
   "SYD-COMBATCARTEL-01": {
     "name": "Combat Cartel",
     "location": "Lane Cove, NSW, Australia",
     "website": "https://www.combatcartel.com.au/",
+    "instagram": "https://www.instagram.com/combat_cartel_mma/",
     "classes": "No-Gi Jiu Jitsu, Kickboxing, Boxing"
   },
   "SYD-GARGRAP-01": {
     "name": "Garage Grappling",
     "location": "Bondi Junction, NSW, Australia",
     "website": "https://garagegrappling.com.au/",
+    "instagram": "https://www.instagram.com/garagegrapplingbondi/",
     "classes": "Gi/No-Gi Jiu Jitsu, Judo"
   },
   "SYD-ORIGIN-01": {
     "name": "Origin MMA",
     "location": "Gladesville, NSW, Australia",
     "website": "https://www.originmma.com.au/",
+    "instagram": "https://www.instagram.com/originmma",
     "classes": "No-Gi Jiu Jitsu, Muay Thai, MMA"
   },
   "SYD-GARJJCBD-01": {
     "name": "Garage Jiu Jitsu - Sydney CBD",
     "location": "Sydney, NSW, Australia",
     "website": "https://www.garagejiujitsucbd.com.au/",
+    "instagram": "https://www.instagram.com/garagejiujitsu_cbd/",
     "classes": "Gi/No-Gi Jiu Jitsu, Wrestling"
   },
   "SYD-ACADEMY411-01": {
     "name": "Academy 411",
     "location": "Rosebery, NSW, Australia",
     "website": "https://academy411.au/",
+    "instagram": "https://www.instagram.com/academyfoureleven/",
     "classes": "Gi/No-Gi Jiu Jitsu, Wrestling"
   },
   "SYD-GRAPPLINGED-01": {
     "name": "Grappling Education",
     "location": "Rockdale, NSW, Australia",
     "website": "https://grapplingeducation.com/",
+    "instagram": "https://www.instagram.com/grapplingeducation/",
     "classes": "Gi/No-Gi Jiu Jitsu, Wrestling"
   },
   "SYD-SAKSRI-01": {
     "name": "SakSri Muay Thai",
     "location": "Marrickville, NSW, Australia",
     "website": "https://www.saksrimuaythai.com.au/",
+    "instagram": "https://www.instagram.com/saksri_muaythai/",
     "classes": "Muay Thai, Boxing"
   },
   "SYD-SHG-01": {
     "name": "Singhaganta Muaythai Gym",
     "location": "Haymarket, NSW, Australia",
     "website": "https://www.singhagantamuaythai.com/",
+    "instagram": "https://www.instagram.com/singhaganta/",
     "classes": "Muay Thai, Boxing"
   },
   "VAN-EVMT-01": {
     "name": "East Van Muay Thai",
     "location": "Vancouver, BC, Canada",
     "website": "https://www.evmt.ca/",
-    "classes": "Muay Thai",
-    "donotlist": 1
+    "instagram": "https://www.instagram.com/eastvanmuaythai",
+    "classes": "Muay Thai"
   },
   "MON-APEX-01": {
     "name": "Apex Martial Arts",
     "location": "Montréal, QC, Canada",
     "website": "https://apexmartialarts.ca/",
-    "classes": "Muay Thai, Boxing, Jiu Jitsu, Wrestling, MMA",
-    "donotlist": 1
+    "instagram": "https://www.instagram.com/apex_martialarts",
+    "classes": "Muay Thai, Boxing, Jiu Jitsu, Wrestling, MMA"
   }
 }

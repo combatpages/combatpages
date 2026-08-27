@@ -39,7 +39,10 @@
           <form id="gymForm">
             <div class="form-row">
               <label for="gymCode">Code</label>
-              <input type="text" id="gymCode" required />
+              <div style="display: flex; gap: 8px; width: 100%">
+                <input type="text" id="gymCode" required />
+                <button type="button" id="fetch-gym-btn" onclick="fetchGymByCode()">Get</button>
+              </div>
             </div>
             <div class="form-row">
               <label for="gymName">Name</label>
@@ -76,7 +79,7 @@
           <button type="button" class="save_btn" data-file="gyms.json">Save</button>
           <button type="button" class="load_btn">Load</button>
         </div>
-        <textarea class="json-input" placeholder="Paste or type JSON here..."></textarea>
+        <textarea id="gym_editor" class="json-input" placeholder="Paste or type JSON here..."></textarea>
       </div>
     </section>
     <section id="view-visits" class="page-view">
@@ -124,7 +127,7 @@
           <button type="button" class="save_btn" data-file="visits.json">Save</button>
           <button type="button" class="load_btn">Load</button>
         </div>
-        <textarea class="json-input" placeholder="Paste or type JSON here..."></textarea>
+        <textarea id="visits_editor" class="json-input" placeholder="Paste or type JSON here..."></textarea>
       </div>
     </section>
   </main>

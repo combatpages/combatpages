@@ -8,15 +8,15 @@ const routes = {
 const errorBar = document.getElementById('error-bar');
 const section_view_gyms = document.querySelector("section#view-gyms");
 const section_view_visits = document.querySelector("section#view-visits");
-[section_view_gyms,section_view_visits].forEach(each_section => {
+[section_view_gyms, section_view_visits].forEach(each_section => {
   if (each_section) {
     const jsonInput = each_section.querySelector('.json-input');
     each_section.querySelector("button.fetch_btn")?.addEventListener("click", fetch_json);
     each_section.querySelector("button.format_btn")?.addEventListener("click", format_json);
     each_section.querySelector("button.copy_btn")?.addEventListener("click", copy_json);
     each_section.querySelector("button.save_btn")?.addEventListener("click", save_json);
-    each_section.querySelector("button.load_btn")?.addEventListener("click", load_json); 
-    each_section.querySelector("textarea.json-input")?.addEventListener("input",handleInput);
+    each_section.querySelector("button.load_btn")?.addEventListener("click", load_json);
+    each_section.querySelector("textarea.json-input")?.addEventListener("input", handleInput);
   }
 })
 
@@ -217,6 +217,7 @@ document.getElementById('addGymBtn').addEventListener('click', () => {
   const jsonEditor = document.querySelector('textarea');
 
   let currentData = {};
+  let updatedData = {};
   try {
     currentData = JSON.parse(jsonEditor.value || '{}');
   } catch (err) {
@@ -235,19 +236,93 @@ document.getElementById('addGymBtn').addEventListener('click', () => {
     }
   };
 
-  const updatedData = {
-    ...newGym,
-    ...currentData
-  };
+  if (currentData[code]) {
+    currentData[code] = newGym[code];
+    updatedData = currentData;
+  }
+  else {
+    updatedData = {
+      ...newGym,
+      ...currentData
+    };
+  }
 
   // Update editor value formatted with 2 spaces
   jsonEditor.value = JSON.stringify(updatedData, null, 2);
+  autosave_gym_edits();
 
   // Clear inputs after successful add
   codeInput.value = '';
   nameInput.value = '';
   locationInput.value = '';
   websiteInput.value = '';
+  instaInput.value = '';
   classesInput.value = '';
 });
 
+function fetchGymByCode() {
+  const codeInput = document.getElementById('gymCode');
+  const code = codeInput ? codeInput.value.trim() : '';
+
+  if (!code) {
+    alert('Please enter a gym code.');
+    return;
+  }
+
+  // Get raw JSON text from your editor textarea/element
+  const jsonEditor = document.querySelector('section#view-gyms .json-input');
+  
+  if (!jsonEditor || !jsonEditor.value) {
+    alert('JSON data is empty or editor not found.');
+    return;
+  }
+
+  try {
+    const gymsData = JSON.parse(jsonEditor.value);
+    const gym = gymsData[code];
+
+    if (!gym) {
+      alert(`No gym found for code: ${code}`);
+      return;
+    }
+
+    // Populate the form fields with matched gym details
+    if (document.getElementById('gymName')) document.getElementById('gymName').value = gym.name || '';
+    if (document.getElementById('gymLocation')) document.getElementById('gymLocation').value = gym.location || '';
+    if (document.getElementById('gymWebsite')) document.getElementById('gymWebsite').value = gym.website || '';
+    if (document.getElementById('gymIG')) document.getElementById('gymIG').value = gym.instagram || '';
+    if (document.getElementById('gymClasses')) document.getElementById('gymClasses').value = gym.classes || '';
+
+  } catch (error) {
+    alert('Failed to parse JSON data. Please ensure the RAW JSON EDITOR contains valid JSON.');
+    console.error(error);
+  }
+}
+
+function autoload_gym_edits(){
+  const STORAGE_KEY = 'gym_editor_autosave_draft';
+  const textarea = document.getElementById('gym_editor');
+  //Sanity check
+  if (!textarea) return;
+
+  // Restore saved content on page load if present
+  const savedContent = localStorage.getItem(STORAGE_KEY);
+  if (savedContent !== null) {
+    textarea.value = savedContent;
+  }
+}
+function autosave_gym_edits(){
+  const STORAGE_KEY = 'gym_editor_autosave_draft';
+  const textarea = document.getElementById('gym_editor');
+  //Sanity check
+  if (!textarea) return;
+  
+  localStorage.setItem(STORAGE_KEY, textarea.value);
+}
+
+(function () {
+  autoload_gym_edits()
+  const textarea = document.getElementById('gym_editor');
+  textarea.addEventListener('input', autosave_gym_edits);
+  textarea.addEventListener('change', autosave_gym_edits);
+})();
