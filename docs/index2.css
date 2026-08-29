@@ -57,7 +57,7 @@ nav {
   width: 100%;
   max-width: var(--max-width);
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: 1.5rem;
   padding-bottom: 1.25rem;
@@ -214,6 +214,14 @@ tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.07);
 }
 
+div#http404-home-text {
+  text-align: center;
+}
+
+div.nav-brand {
+  margin-right: auto;
+}
+
 @media screen and (max-width: 768px) {
   table, thead, tbody, th, td, tr {
     display: block;
@@ -331,4 +339,12 @@ tbody tr:hover {
 .nav-toggle {
   margin-left: auto;         /* Fallback to ensure it stays on the far right */
 }
+}
+
+
+a.instagram_logo_link {
+  display: inline-flex;
+}
+img.instagram_logo {
+  height: 0.95rem;
 }
