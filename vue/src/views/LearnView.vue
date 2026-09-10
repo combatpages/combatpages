@@ -17,12 +17,19 @@
           <li>Videos:</li>
           <ul>
             <li><a href="https://www.youtube.com/@AbsoluteMMAStKilda">AbsoluteMMAStKilda YouTube</a></li>
+            <ul>
+              <li><a href="https://www.youtube.com/watch?v=by85KB6wf8A">3 MUST-KNOW Side Control Escapes (Lachlan Giles)</a></li>
+            </ul>
             <li><a href="https://www.youtube.com/@JFLOJUDO">JFLOJUDO YouTube</a></li>
             <li><a href="https://www.youtube.com/@JordanTeachesJiujitsu">JordanTeachesJiujitsu YouTube</a></li>
             <li><a href="https://www.youtube.com/@fightclubmuaythaichannel5493">Fight Club Muay Thai YouTube</a></li>
             <li><a href="https://www.youtube.com/@ZombieProofBJJ">ZombieProofBJJ YouTube</a></li>
             <li><a href="https://www.youtube.com/@BazookaJoe">BazookaJoe YouTube</a></li>
             <li><a href="https://www.youtube.com/@MMAShredded">MMAShredded YouTube</a></li>
+            <li>Cody Reeves (Muay Thai):</li>
+            <ul>
+              <li><a href="https://www.instagram.com/reels/DbVb6m1K83z/">Defending the Switch Kick</a></li>
+            </ul>
 
             <li><a href="https://submeta.io/">SUBMETA</a></li>
           </ul>

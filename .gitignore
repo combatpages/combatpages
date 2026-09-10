@@ -1,1 +1,7 @@
-vue/output
+vue/output/*
+vue/.dockerignore
+vue/Dockerfile
+vue/build.sh
+vue/build_and_deploy.sh
+vue/docker-compose-prod.yml
+vue/docker-compose.yml
