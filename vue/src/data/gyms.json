@@ -1,4 +1,95 @@
 {
+  "SYD-LEGENDS-01": {
+    "name": "Legends Gym",
+    "location": "89 Anzac Parade, Kensington, NSW, Australia",
+    "website": "https://www.legendsgym.com.au/",
+    "instagram": "https://www.instagram.com/legendsgymsydney",
+    "classes": "Boxing, Muay Thai, No-Gi Jiu Jitsu"
+  },
+  "SYD-JWK-01": {
+    "name": "Jin Wu Koon",
+    "location": "Level 1/232/236 Cleveland St, Chippendale, NSW, Australia",
+    "website": "https://jinwukoon.net/",
+    "instagram": "https://www.instagram.com/jinwukoonmartialarts",
+    "classes": "Muay Thai, Kickboxing"
+  },
+  "SYD-LEGACYCHIP-02": {
+    "name": "Legacy BJJ HQ",
+    "location": "232 Cleveland St, Chippendale, NSW, Australia",
+    "website": "https://www.legacybjj.com.au/sydneyhq/",
+    "instagram": "https://www.instagram.com/legacy_bjj_hq/",
+    "classes": "Gi/No-Gi Jiu Jitsu"
+  },
+  "SYD-EQUINOX-01": {
+    "name": "Equinox Martial Arts Academy",
+    "location": "18/390 Eastern Valley Way, Chatswood, NSW, Australia",
+    "website": "https://equinoxacademy.com.au/",
+    "instagram": "https://www.instagram.com/equinoxmartialarts/",
+    "classes": "Jiu Jitsu, Muay Thai, MMA"
+  },
+  "SYD-EPICMT-01": {
+    "name": "Epic Muaythai",
+    "location": "Unit 4/85-97 New South Head Rd, Edgecliff, NSW, Australia",
+    "website": "https://epicmuaythaiacademy.com.au/",
+    "instagram": "https://www.instagram.com/epicmuaythai/",
+    "classes": "Muay Thai, Boxing"
+  },
+  "SYD-EMERGE-01": {
+    "name": "Emerge MMA",
+    "location": "8/200 Coward St, Mascot, NSW, Australia",
+    "website": "https://emergemartialarts.com.au/",
+    "instagram": "https://www.instagram.com/emergemartialarts.au",
+    "classes": "MMA, Boxing, Muay Thai, Gi/No-Gi Jiu Jitsu"
+  },
+  "SYD-EASTSIDEMT-01": {
+    "name": "Eastside Muay Thai",
+    "location": "U14/133-137 Beauchamp Rd, Matraville, NSW, Australia",
+    "website": "https://eastsidemuaythai.com.au/",
+    "instagram": "https://www.instagram.com/eastside.muaythai",
+    "classes": "Muay Thai, Boxing"
+  },
+  "SYD-DREAMCJ-01": {
+    "name": "Dream Judo",
+    "location": "1018 Victoria Road, West Ryde, NSW, Australia",
+    "website": "https://dreamcentre4us.com/dream-judo",
+    "instagram": "https://www.instagram.com/dreamjudo_dreamy",
+    "classes": "Judo"
+  },
+  "SYD-DIAMONDTB-01": {
+    "name": "Diamond Thai Boxing",
+    "location": "Unit 1/13 Renshaw St, Cranebrook, NSW, Australia",
+    "website": "https://www.diamondthaiboxing.com/",
+    "instagram": "https://www.instagram.com/diamond.thai.boxing",
+    "classes": "Muay Thai"
+  },
+  "SYD-DARKSIDE-01": {
+    "name": "Darkside Gym",
+    "location": "106 Corunna Ln, Stanmore, NSW, Australia",
+    "website": "https://www.darksidegym.com/",
+    "instagram": "https://www.instagram.com/darkside_gym/",
+    "classes": "Muay Thai, Boxing, MMA"
+  },
+  "SYD-CORTEX-01": {
+    "name": "Cortex MMA",
+    "location": "21 McCauley St, Alexandria, NSW, Australia",
+    "website": "https://cortexmma.com.au/",
+    "instagram": "https://www.instagram.com/cortexmma/",
+    "classes": "No-gi Jiu Jitsu, Kickboxing, Boxing, MMA, Wrestling, Muay Thai"
+  },
+  "SYD-ALAVANCA-01": {
+    "name": "Alavanca Jiujitsu Academy",
+    "location": "2/206 Avoca St, Randwick, NSW, Australia",
+    "website": "https://alavanca.com.au/",
+    "instagram": "https://www.instagram.com/alavanca.jiujitsu/",
+    "classes": "Gi/No-Gi Jiu Jitsu"
+  },
+  "SYD-187MT-01": {
+    "name": "187 Muay Thai, Boxing & Fitness",
+    "location": "17/1 Holbeche Road, Arndell Park, NSW, Australia",
+    "website": "https://187muaythai.com.au/",
+    "instagram": "https://www.instagram.com/187.muaythai/",
+    "classes": "Muay Thai, Boxing"
+  },
   "SYD-DDRAGON-01": {
     "name": "Double Dragon",
     "location": "Sutherland, NSW, Australia",
