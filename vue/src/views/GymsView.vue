@@ -1,5 +1,7 @@
 <template>
   <PageSection title="Gyms" code="gyms">
+    <!-- Search bar and faceted search before showing anything... -->
+     <!-- Show map with geolocation -->
     <table id="data-table">
       <tbody id="table-gyms">
         <tr v-for="(item, index) in gym_list">

@@ -10,10 +10,11 @@
       <span class="hamburger"></span>
     </button>
     <ul class="nav-links" :class="{ 'nav-open': isNavActive }">
-      <li><router-link to="/visits" @click="toggleNav">My Visits</router-link></li>
       <li><router-link to="/gyms" @click="toggleNav">Gyms</router-link></li>
       <li><router-link to="/events" @click="toggleNav">Events</router-link></li>
-      <li><router-link to="/learn" @click="toggleNav">Learn</router-link></li>
+      <li><router-link to="/recovery" @click="toggleNav">Recovery</router-link></li>
+      <li><router-link to="/visits" @click="toggleNav">My Visits</router-link></li>
+      <li><router-link to="/learn" @click="toggleNav">My Learning</router-link></li>
       <!--<li><router-link to="/about" @click="toggleNav">My Story</router-link></li>-->
     </ul>
   </nav>

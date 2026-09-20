@@ -1,5 +1,5 @@
 <template>
-  <PageSection title="Learn" code="learn">
+  <PageSection title="My Learning" code="learn">
       <div id="learn-home">
         <p>I wish that I'd started journalling when I began training Muay Thai, Jiu Jitsu, and MMA, so that I could
           share the lessons I learned along the way - especially for beginners - but I think everyone is different and

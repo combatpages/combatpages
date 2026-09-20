@@ -1,13 +1,10 @@
 <template>
   <PageSection title="Welcome" code="home">
       <div id="intro-home">
-        <p>These Combat Pages are an exploration of combat sport gyms and organisations, especially - but not limited to
-          - those in the greater area of Sydney, NSW, Australia.</p>
-        <p>I share not only my story and my gym visits, but also as much information as I can find on gyms, combat sport
-          organisations (e.g. fight promotions and competitions), and learning resources of all kinds.</p>
-        <p>I want you all to benefit from the work I've done scrolling, messaging, emailing, reading, watching,
-          striking, clinching, and rolling. On that note, check out <router-link to="/visits">My Visits</router-link> to get started on
-          the journey!</p>
+        <p>Combat Pages is your free guide to combat sports, especially in - but not limited to - Sydney, NSW, Australia.</p>
+        <p>You will find information on places to train, events to attend, options for recovery, and some further info from my own visits to gyms and learning resources I've found useful.</p>       
+        <p>I want you all to benefit from the work that I've done scrolling, messaging, emailing, reading, watching, striking, clinching, wrestling, and rolling.</p>
+        <p>Since launching Combat Pages in July 2026, I have connected with so many amazing people in the combat sports community in Sydney (and around the world). If you have something you want added to Combat Pages or just want to have a chat, feel free to send me a message on Instagram!</p>
       </div>
   </PageSection>
 </template>
